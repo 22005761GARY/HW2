@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>Financial Report</h1>
+<tr th:each = "employee:${EmployeeList}">
+    <td th:text = "編號 : +${employee.id}"></td>
+    <td th:text = "姓名 : +${employee.name}"></td>
+    <td th:text = "薪水 : +${employee.salary}"></td>
+    <td th:text = "COVID-19 : +${employee.COVID19}"></td>
+</tr>
+</body>
+</html>
